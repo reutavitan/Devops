@@ -17,7 +17,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm rebuild
-      - run test
+      - run: npm test
 
 workflows:
     my-workflow:
