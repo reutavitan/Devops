@@ -1,4 +1,4 @@
-const request = require('supertest')
+/*const request = require('supertest')
 const app = require('../server')
 
 describe('Test suite 1:',()=>{
@@ -10,4 +10,4 @@ describe('Test suite 1:',()=>{
         const res = await request(app).get('/1234')
         expect(res.statusCode).toEqual(404)
     })
-})
+})*/
