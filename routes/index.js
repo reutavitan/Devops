@@ -140,5 +140,8 @@ router.post('/forgetpass', function (req, res, next) {
 	});
 	
 });
+router.get('/test',function (req, res, next){
+    res.send("test Hello")
+})
 
 module.exports = router;
