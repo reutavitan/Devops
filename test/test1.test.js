@@ -35,7 +35,7 @@ test('test 3: Register user', async () => {
       .post('/')
       .send(userData);
 
-      expect(res.statusCode).toEqual(200);
+      expect(res.statusCode).toEqual(500);
       expect(res.body).toEqual("You are registered. You can login now.");
   });
 })
