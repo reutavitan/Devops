@@ -1,4 +1,3 @@
-Sure! Here's an example README file for the application you mentioned:
 
 # Devops Application
 
