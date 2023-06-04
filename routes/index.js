@@ -14,8 +14,9 @@ router.post('/', function(req, res, next) {
 	if(!personInfo.email || !personInfo.username || !personInfo.password || !personInfo.passwordConf  || !personInfo.exam1 || !personInfo.exam2 || !personInfo.exam3  ){
 		res.send();
 	} else {
-		if (personInfo.password == personInfo.passwordConf && 0 >= personInfo.exam1 >= 100 && 0 <= personInfo.exam2 <= 100 && 0 <= personInfo.exam3 <= 100  ){
-	        if (personInfo.exam1 >= 100 &&  personInfo.exam1 <= 0)  {
+		if (personInfo.password == personInfo.passwordConf ){
+			//&& 0 >= personInfo.exam1 >= 100 && 0 <= personInfo.exam2 <= 100 && 0 <= personInfo.exam3 <= 100 
+	        if (personInfo.exam1 <= 100 &&  personInfo.exam1 >= 0)  {
 		    	User.findOne({email:personInfo.email},function(err,data){
 					if(!data){
 						var c;
