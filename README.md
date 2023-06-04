@@ -29,6 +29,7 @@ The Devops application is a web-based platform built using Node.js, Express, Mon
    ```
 
    The application should now be running on http://localhost:3000.
+   Alternatively, you can access the live application deployed on Azure at https://dexe.azurewebsites.net/.
 
 ## Features
 
